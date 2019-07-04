@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+  <title> greenscreen </title>
+  <meta charset="utf-8">
+  <script src="js/jquery.js"></script>
+  <script src="js/greenscreen.js"></script>
+  <link rel="stylesheet" href="css/site.css" type="text/css" />
+</head>
+  <body>
+    <header>
+    <h1 id="titre1"> Greenscreen </h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="cassebrique.html">Casse Brique</a></li>
+
+                <li><a href="greenscreen.html">Greenscreen</a></li>
+                <li><a href="pong.html">PONG</a></li>
+                <li><a href="sources.html">Sources</a>
+        
+            </ul>
+          </nav>
+    </header>
+    <div style="position:fixed;top:0;left:0;z-index:100;">
+
+      <input id="th" type="range" min="0" max="255" value="40" style=" width:640px;">
+        
+
+      <button id="snap">Take background</button>
+
+    </div>
+
+    <video id="video" width="640" height="480" autoplay></video>
+
+    <div style="position:relative;display:inline-block;width:640px;height:480px;">
+      <img style="position:absolute;left:0;top:0;"   alt="image"   id="backimg" width="640" height="480"  src="images/back.jpg">
+      <canvas style="position:absolute;left:0;top:0;"   id="canvas" width="640" height="480"></canvas>
+    </div>
+  </body>
+  </html>
