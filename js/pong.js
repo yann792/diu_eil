@@ -52,8 +52,8 @@
                   HEIGHT = canvas.height;
                   x = 150;
                   y = 150;
-                  dx = 1;
-                  dy = 2;
+                  dx = 2;
+                  dy = 4;
                   radius = 10;
                   rightDown = false;
                   leftDown = false;
